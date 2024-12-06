@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop Modern add Highend Laptop</title>
+    <link rel="stylesheet" href="styles.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TechShop</div>
+        
+        <!-- Add search container -->
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+            <button  class="search-button" id="searchButton">
+                <i class='bx bx-search' ></i>
+            </button>
+        </div>
+        
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="AllProduct.html">Shop</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="aboutus.html">Contact</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+      
+        </ul>
+    </nav>
+   <section class="about-container">
+        <h1>About Us</h1>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Final Project Submission</h2>
+                <p>I am pleased to submit my final project for IT501P. This project represents my dedication and effort throughout the course.</p>
+                <p>Thank you, Ms. Maria Ainna Butiong, for your guidance and support. I look forward to your feedback and hope it meets your expectations.</p>
+            </div>
+        </div>
+            
+            <div class="about-images">
+                <div class="image-container">
+                    <div class="circle-image">
+                        <img src="image/ashley.jpg" alt="DataBlitz Store Front" class="about-image">
+                    </div>
+                    <div class="image-caption">Ashley Agala Valiente</div>
+                </div>
+                <div class="image-container">
+                    <div class="circle-image">
+                        <img src="image/vincent.jpg" alt="Our Team" class="about-image">
+                    </div>
+                    <div class="image-caption">Vincent B. Canono</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>TechShop is your premier destination for High End Laptop and accessories.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 234 567 8900</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@TechShop.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Street, NY 10001</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <div class="two-column-links">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Shipping</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Returns</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Products</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media for updates and exclusive offers.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+       <style>
+        /* Import Google Font - Optional but recommended for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about-container h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.about-text p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-images {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.circle-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-caption {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .image-container {
+        min-width: 200px;
+    }
+    
+}
+.circle-image {
+    width: 500px; /* Increased size */
+    height: 500px; /* Increased size */
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-images {
+    display: flex;
+    gap: 100px; /* Increased gap between images */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0; /* Added vertical margin */
+}
+
+.image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px; /* Increased max-width */
+    text-align: center;
+    margin: 20px; /* Added margin around each container */
+}
+
+.circle-image {
+    width: 400px; /* Made circles bigger */
+    height: 400px;
+    margin: 0 auto 30px; /* Added bottom margin */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-caption {
+    margin-top: 30px; /* Increased spacing between image and caption */
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.2rem; /* Slightly larger caption text */
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .about-images {
+        gap: 50px; /* Reduced gap for smaller screens */
+    }
+    
+    .circle-image {
+        width: 300px; /* Smaller circles on medium screens */
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle-image {
+        width: 250px; /* Even smaller circles on mobile */
+        height: 250px;
+    }
+}
+
+
+/* Optional: Add a subtle animation when the images load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-container {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #ffffff;
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2D3791;
+    text-decoration: none;
+}
+
+/* Search Container Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 8px 15px;
+    border-radius: 25px;
+    width: 400px;
+    transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+    box-shadow: 0 0 0 2px #2D3791;
+    background: #ffffff;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.search-button:hover {
+    color: #2D3791;
+}
+
+.search-button i {
+    font-size: 20px;
+}
+
+/* Navigation Links Styles */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #2D3791;
+    background: rgba(45, 55, 145, 0.1);
+}
+
+.nav-links li a.active {
+    color: #2D3791;
+    background: rgba(45, 55, 145, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .search-container {
+        width: 300px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .search-container {
+        width: 100%;
+        order: 3;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        order: 2;
+    }
+
+    .nav-links li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Optional: Add a hover effect for the entire search container */
+.search-container:hover {
+    background: #ebebeb;
+}
+
+/* Optional: Add animation for search input focus */
+@keyframes searchFocus {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.search-container:focus-within {
+    animation: searchFocus 0.3s ease;
+}
+
+/* Optional: Add subtle transition for nav links */
+.nav-links li a {
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #2D3791;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+    width: 100%;
+}
+        :root {
+    --primary-color: #2D3791;
+    --text-color: #333;
+    --link-color: #00A0E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.info-block {
+    margin-bottom: 30px;
+}
+
+.info-block:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.phone-numbers p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.email-intro {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.note p {
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+address {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .contact-content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-content {
+        padding: 15px;
+    }
+}
+footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 80px 0 0 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 60px;
+}
+
+/* About Section */
+.footer-section h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+}
+
+.about p {
+    color: #B0B0B0;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: #3498db;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.contact-item span {
+    color: #B0B0B0;
+    font-size: 15px;
+}
+
+/* Quick Links Section */
+.two-column-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 12px;
+}
+
+.links ul li a {
+    color: #B0B0B0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.links ul li a i {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.links ul li a:hover {
+    color: #3498db;
+    transform: translateX(5px);
+}
+
+/* Social Section */
+.social p {
+    color: #B0B0B0;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #2c2c2c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-icon.facebook:hover { background: #3b5998; }
+.social-icon.twitter:hover { background: #1da1f2; }
+.social-icon.instagram:hover { background: #e1306c; }
+.social-icon.linkedin:hover { background: #0077b5; }
+
+/* Newsletter */
+.newsletter {
+    margin-top: 30px;
+}
+
+.newsletter h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #fff;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+    background: #2980b9;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    background: #111111;
+}
+
+.footer-bottom p {
+    color: #B0B0B0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-section.social {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-section.social {
+        grid-column: span 1;
+    }
+    
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .two-column-links {
+        justify-content: center;
+    }
+    
+    .contact-info .contact-item {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .newsletter form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+       </style>
+
+</body>
+</html>
